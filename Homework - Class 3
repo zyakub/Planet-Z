@@ -1,1 +1,25 @@
-# Homework for Class 3
+Homework for Class 3
+
+1. The data appears to be structured to keep track of information relative to orders from
+
+customers at Chipotle. There is an order_id that acts as a PK however this does not seem to 
+
+be unique per each row as each order can have many items. Next there is the Quantity of 
+
+the item being ordered, the Item itself and a Description column to describe the Item where 
+
+applicable.
+head chipotle.tsv
+tail chipotle.tsv
+
+2. There appears to be 1834 orders.
+3. 4623 lines in the file
+wc -l chipotle.tsv
+4. 553 Orders of Chicken Burrito as opposed to 368 orders of Steak burrito
+code - grep -i 'chicken burrito' chipotle.tsv | wc -l and compare with the count for grep -i 'steak burrito' chipotle.tsv | wc -l
+5. Black beans
+code - rep -i 'chicken burrito' chipotle.tsv | grep -i 'black beans' | wc -l with grep -i 'chicken burrito' chipotle.tsv | grep -i 'pinto beans' | wc -l
+6. Currently there are airlines.csv, chipotle.tsv and sms.tsv which are in the data subdirectory
+hange your working directory to DAT8, and then use find . -name *.?sv
+7. Currently there are 13 lines in DAT8 files that contain the word 'dictionary'.
+Go to the working directory DAT8, and then use grep -ir 'dictionary' . | wc -l
