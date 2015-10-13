@@ -10,7 +10,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # read in 'imdb_1000.csv' and store it in a DataFrame named movies
-movies = pd.read_csv('imdb_1000.csv')
+energy = pd.read_csv('5_Topic_en_csv_v2.csv')
 
 # check the number of rows and columns
 movies.shape
